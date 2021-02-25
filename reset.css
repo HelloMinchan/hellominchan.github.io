@@ -141,6 +141,13 @@ h1 {
   line-height: 1.2;
   font-weight: 700;
 }
+h2 {
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
 
 blockquote {
   margin-left: -25px;
@@ -183,6 +190,10 @@ p {
   margin-top: -0.7em;
 }
 
+.description {
+  padding-bottom: 10px;
+}
+
 @media (max-width: 450px) {
   h1 {
     font-size: 2.3em;
@@ -210,5 +221,94 @@ p {
   .conan {
     padding-top: 10px;
     font-size: 1em;
+  }
+}
+
+a,
+a:visited {
+  color: #069;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  border: 0;
+  color: #fff;
+  background: #069;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+a code {
+  color: inherit;
+  background: 0 0;
+}
+ul {
+  list-style: square;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 1.38888em;
+}
+ul li,
+ol li {
+  padding: 0;
+  margin: 0 0 0.7em;
+}
+nav ul,
+nav ol {
+  list-style: none;
+}
+
+.u-textCenter {
+  text-align: center !important;
+}
+.u-textLeft {
+  text-align: left !important;
+}
+.u-textRight {
+  text-align: right !important;
+}
+.u-textTruncate {
+  max-width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+}
+.u-textBreak {
+  word-wrap: break-word !important;
+}
+.u-textInheritColor {
+  color: inherit !important;
+}
+.u-textInheritAllColor,
+.u-textInheritAllColor:hover,
+.u-textInheritAllColor:focus,
+.u-textInheritAllColor:active {
+  color: inherit !important;
+}
+.List {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.List-item {
+  font-size: 1.1111em;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+  padding: 0.75em 0 0;
+}
+.List-timestamp {
+  float: right;
+  margin: 0 0 0 20px;
+}
+@media screen and (max-width: 340px) {
+  .List-timestamp {
+    float: none;
+    display: block;
+    margin: 0;
   }
 }
