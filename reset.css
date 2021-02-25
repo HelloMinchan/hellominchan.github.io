@@ -201,7 +201,7 @@ nav ol {
   float: right;
   margin: 0 0 0 20px;
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 450px) {
   .List-timestamp {
     float: none;
     display: block;
