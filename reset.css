@@ -223,6 +223,7 @@ body {
 
 .container {
   min-width: 40%;
+  max-width: 850px;
 }
 h1 {
   font-size: 2.7em;
@@ -280,6 +281,10 @@ p {
 
 .description {
   padding-bottom: 10px;
+}
+
+.my-list-item {
+  padding-left: 20px;
 }
 
 @media (max-width: 450px) {
