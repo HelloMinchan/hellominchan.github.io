@@ -284,7 +284,17 @@ p {
 }
 
 .my-list-item {
-  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.my-list-item-2 {
+  margin-left: 40px;
+  font-weight: bold;
+  list-style-type: circle;
+}
+.my-list-item-2-description {
+  margin-left: 20px;
+  font-weight: normal;
 }
 
 @media (max-width: 450px) {
