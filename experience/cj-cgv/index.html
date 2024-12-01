@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>정민찬 - CJ CGV</title>
+    <meta name="description" content="안녕하세요, 정민찬입니다." />
+    <meta property="og:description" content="안녕하세요, 정민찬입니다." />
+
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <br />
+
+      <div class="profile_header">
+        <h2>CJ CGV, Software Engineer</h2>
+      </div>
+
+      ● IT개발팀, 영사솔루션 파트 (2023.09 ~ )
+      <br />
+
+      2023 하반기 CJ 그룹 공채로 CJ CGV에 합류해 영사솔루션 개발을
+      담당하고있습니다.
+      <br />
+      국내 196개 극장, 1358개의 스크린을 관리하는 NOC(Network Operation Center)를
+      운영하고,
+      <br />
+      극장 내부의 각종 영사장비를 제어하는 TMS(Theater Management System)를
+      개발하고있습니다.
+      <br />
+      또한 세계 5위 극장 사업자로서, 진출해있는 중국, 터키, 베트남, 인도네시아와
+      협업하며 글로벌 경험을 쌓고있습니다.
+
+      <br />
+      <br />
+      기술 스택 : .NET Framework, MSSQL, SNMP, React, Recoil, FastAPI
+      <br />
+      <br />
+
+      <li class="my-list-item">
+        오픈 업무 중 각종 원격 명령을 극장 내 상영관 별로 하나씩 수행하고 있는 비효율 발견
+        <li class="my-list-item-2">
+          해결 과정
+          <br />
+          <div class="my-list-item-2-description">
+              극장 오픈 업무의 핵심인 스케줄 배포, QC, 세팅 명령을 동시에 내릴 수 있는 시스템 개발
+              <br/>
+              다수의 극장과 상영관을 선택적으로 제어할 수 있도록 2차원 테이블 형태의 UI 구현
+              <br/>
+              WebSocket 통신을 통해 명령의 결과를 실시간으로 확인할 수 있도록 테이블의 셀에 색깔로 표시
+              <br/>
+              (빨간색 : 실패, 노란색 : 수행중, 초록색 : 성공)
+              <br/>
+              추후, 특별관(IMAX, 4DX, SCREENX 등) 처리 등 TTMS(Total Theater Management System)으로 발전
+          </div>
+        </li>
+        <li class="my-list-item-2">
+            성과
+            <br />
+            <div class="my-list-item-2-description">
+                As-Is 오픈 업무 대비 QC 약 78분, 스케줄 배포 약 13분 총 80분 업무 수행 시간 효율화
+                <br/>
+                오픈 업무 5인 기준 인당 약 26개 극장에서 3인 기준 43개 극장 관리 가능
+                <br/>
+                원격센터 미소지기(비정규직 근로자) 일 평균 인원 2인 감축으로 인한 인건비 절감
+                <br/>
+                ASPX 기반의 웹 개발환경에서 React 기반의 Frontend 기술 스택 전환
+            </div>
+        </li>
+      </li>
+
+      <br />
+
+      <li class="my-list-item">
+        신규 인터널 애플리케이션 배포 시 온프레미스 IDC 서버 구성으로 인한 외부망 노출 문제 발생
+        <li class="my-list-item-2">
+            해결 과정
+            <br />
+            <div class="my-list-item-2-description">
+                온프레미스 인프라 특성 상 가용중인 서버들의 리소스 부족으로 인해,
+                <br/>
+                인터널 애플리케이션을 배포할 수 있는 곳이 외부망에 연결 된 서버 밖에 없는 문제 발생
+                <br/>
+                우선, 외부망 서버에 배포 후 방화벽 정책을 세워, 인가되지 않은 접근 허용 방지
+                <br/>
+                내부망(CJ 그룹망)에 연결 된 서버에 Nginx로 리버스 프록시 설정하여 배포 서버로 내부 통신하도록 구현
+            </div>
+        </li>
+        <li class="my-list-item-2">
+            성과
+            <br />
+            <div class="my-list-item-2-description">
+                내부 데이터가 외부에 노출되는 정보 보안 이슈 해결
+                <br/>
+                IDC 내 서버를 추가로 구매 하지 않고 문제를 해결하여 인프라 운영 비용 절감
+            </div>
+        </li>
+      </li>
+    </li>
+
+    <br />
+
+    <li class="my-list-item">
+      백오피스 데이터를 동기화하는 배치 시스템의 결과 확인 방법 부재
+      <li class="my-list-item-2">
+          해결 과정
+          <br />
+          <div class="my-list-item-2-description">
+              백오피스 데이터(극장, 상영관, 스케줄, 영화, 발권 정보 등)의 동기화 실패 시,
+              <br/>
+              운영팀에서 이슈를 감지하기 전 확인할 수 없는 문제 발견
+              <br/>
+              매일 아침 9시, 배치 시스템의 파일 로그를 파싱해 동기화 결과 리포트 메일을 발송하도록 구현
+          </div>
+      </li>
+      <li class="my-list-item-2">
+          성과
+          <br />
+          <div class="my-list-item-2-description">
+              동기화 결과(성공, 실패, 에러 원인 등)의 가시성 확보로 즉각적인 대처 가능
+              <br/>
+              문제 발생 시, 서버에 직접 접속해 파일 로그를 분석해야하는 비효율 개선
+          </div>
+      </li>
+    </li>
+  </li>
+
+  <br />
+
+    <li class="my-list-item">
+      파트 내 협업을 위한 개발 문화 부재
+      <li class="my-list-item-2">
+          해결 과정
+          <br />
+          <div class="my-list-item-2-description">
+              코로나 여파 등으로 인한 인력 감축으로 오랜 기간동안 제품이 단독 개발 및 유지보수 됨
+              <br/>
+              이로 인해 파트 내 협업을 위한 개발 문화가 부재되어 이를 점진적으로 해결하기 위해 노력
+              <br/>
+              로컬 PC에서 관리 되던 프로젝트 소스코드 GitLab 기반 형상관리 도입
+              <br/>
+              영사솔루션 파트 인프라 장표 생성 및 프로젝트 별 중구난방이던 코딩 규칙(컨벤션) 정립
+              <br/>
+              Jira를 활용한 스프린트 기반의 업무 방식 및 회고 문화 도입
+              <br/>
+              온보딩 기간동안 습득한 도메인 지식을 문서화하여 팀 내 Confluence 활성화
+          </div>
+      </li>
+      <li class="my-list-item-2">
+          성과
+          <br />
+          <div class="my-list-item-2-description">
+              운영중인 13개 프로젝트 소스코드 GitLab 이전 및 형상관리
+              <br/>
+              Git-flow 브랜치 전략 도입으로 개발 환경(production, dev) 분리 및 코드리뷰 문화 정착
+              <br/>
+              Jira 대시보드를 구축하여 유관부서의 업무 요청을 기존 메일 방식에서 Jira로 일원화
+              <br/>
+              Confluence에 프로젝트 테크 스펙 7건, 각종 업무 지식 30건 이상 문서화
+          </div>
+      </li>
+    </li>
+  </li>
+
+      <br />
+      <li class="my-list-item">
+        TMS 글로벌 지원을 위한 현지 개발자(중국, 터키, 베트남, 인도네시아) 커뮤니케이션 및 인도네시아 법인 출장
+      </li>
+      <li class="my-list-item">
+        온프레미스 IDC 노후화로 인한 Power Supply 장비 교체 작업
+      </li>
+      <li class="my-list-item">
+        As-Is 시스템 유지보수 및 장애대응
+      </li>
+      <li class="my-list-item">
+        To-Be 시스템 Python 기반의 공통 모듈 개발 및 사내 Pip 패키지 저장소 구축
+      </li>
+      <li class="my-list-item">
+        FastAPI 기반의 영사솔루션 데이터 인터페이스 REST API 서버 개발
+      </li>
+      <li class="my-list-item">
+        M365 PowerAutomate를 활용한 팀 내 알림 자동화 시스템 구축(주간보고 작성, 인증서 갱신 등)
+      </li>
+
+      <br />
+      <br />
+      <br />
+    </div>
+  </body>
+</html>
