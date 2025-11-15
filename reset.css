@@ -286,6 +286,10 @@ p {
 .my-list-item {
   margin-left: 20px;
 }
+.my-list-item-description {
+  margin-left: 40px;
+  list-style-type: circle;
+}
 
 .my-list-item-2 {
   margin-left: 40px;
@@ -338,4 +342,9 @@ p {
     margin: 0 0 0.75em;
     padding: 0.75em 0 0;
   }
+}
+
+#aws-drawio {
+  width: 100%;
+  object-fit: contain;
 }
